@@ -206,6 +206,8 @@ if __name__ == '__main__':
 
     # Grab kinect data
     try:
+        # use registered depth depending on commandline option
+        # XXX TODO
         (depth, _) = freenect.sync_get_depth()
         (rgb, _) = freenect.sync_get_video()
     except:
